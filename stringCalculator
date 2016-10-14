@@ -14,5 +14,7 @@ public class stringCalculator{
 			Integer.parseInt(n);
 			}
 		}
+		
+		return 0;
 	}
 }
