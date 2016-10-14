@@ -37,15 +37,20 @@ public class testCalculator{
 	}
 
 	public final void neg(){
-		Assert.assertEqual(0, stringCalculator("1,2,3,-1,2");
+		Assert.assertEquals(0, stringCalculator("1,2,3,-1,2");
 	}
 
 	public final void over1000(){
-		Assert.assertEqual(1, stringCalculator("1000, 10001, 1");
+		Assert.assertEquals(1, stringCalculator("1000, 10001, 1");
+	}
+
+	public final void numDel(){
+		Assert.assertEquals(1+2+3, stringCalculator.add("//;n1;2;3");
 	}
 
 	public static void main(String [] args){
 		
 		over1000();
+		numDel();
 	}
 }

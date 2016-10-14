@@ -3,9 +3,22 @@
 public class stringCalculator{
 
 	public static int add(final String n){
+		String del = ",|n";
+		String numDel = n;
+
+		if (n.startsWith("//"){
+			int delIndex = n.indexOf("//") + 2;
+			del = n.substring(delIndex, delIndex + 1);
+			numDel = n.substring(n.indexOf("n") + 1);
+		}
+
+		reutrn add(numDel, del);
+	}
+
+	public static int add(final String n, final String del){
 		
 		int val = 0;
-		String [] arr = n.split(",|n);
+		String [] arr = n.split(del);
 		List negs = new ArrayList();
 
 		for (String number : arr){
