@@ -4,26 +4,28 @@ public class stringCalculator{
 
 	public static int add(final String n){
 		
-		int val = 0;		
-		String[] arr = numbers.split(",|n");
-
-		/*
-		if (arr.length > 2){
-			System.out.print("Invalid");
-			return 0;
-		}
-		*/
+		int val = 0;
+		String [] arr = n.split(",|n);
+		List negs = new ArrayList();
 
 		for (String number : arr){
-			if (!number.trim().empty()){
-				val += Integer.parseInt(number);
+			if (!number.trim().isEmpty()){
+				int numInt += Integer.parseInt(number.trim());
+				
+				if (numInt < 0){
+					negs.add(numInt);
+				}
+
+				val += numInt;
+			}
+
+			if (negs.size() > 0){
+				System.out.println("Negatives not allowed");
+			
+				return 0;
 			}
 		}
-		
+
 		return val;
-	}
-
-	public static int add(final String numbers, final String delimiter){
-
 	}
 }

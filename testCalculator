@@ -36,9 +36,12 @@ public class testCalculator{
 		Assert.assertEquals(1+2+3, stringCalculator.add("1,2n15");
 	}
 
-	public static void main(String [] args){
+	public final void neg(){
+		Assert.assertEqual(0, stringCalculator("1,2,3,-1,2");
+	}
 
-		anyNumber();
-		newLine();
+	public static void main(String [] args){
+		
+		neg();
 	}
 }
