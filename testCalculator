@@ -40,8 +40,12 @@ public class testCalculator{
 		Assert.assertEqual(0, stringCalculator("1,2,3,-1,2");
 	}
 
+	public final void over1000(){
+		Assert.assertEqual(1, stringCalculator("1000, 10001, 1");
+	}
+
 	public static void main(String [] args){
 		
-		neg();
+		over1000();
 	}
 }

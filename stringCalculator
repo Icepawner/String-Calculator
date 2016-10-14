@@ -15,8 +15,9 @@ public class stringCalculator{
 				if (numInt < 0){
 					negs.add(numInt);
 				}
-
-				val += numInt;
+				else if (numInt <= 1000){
+					val += numInt;
+				}
 			}
 
 			if (negs.size() > 0){
