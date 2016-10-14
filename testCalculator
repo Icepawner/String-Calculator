@@ -9,8 +9,7 @@ public class testCalculator{
 	}
 
 	public final void try0num(){
-		stringCalculator.add();
-		Assert.assertTrue(true);
+		Assert.assertEquals(0, stringCalculator.add(""));
 	}
 
 	public final void try2num(){
@@ -21,11 +20,21 @@ public class testCalculator{
 		stringCalculator.add("1,e");
 	}
 
+	public final void oneNumSum(){
+		Assert.assertEquals(1, stringCalculator("1");
+	}
+
+	public final void twoNumSum(){
+		Assert.assertEquals(1 + 1, stringCalculator("1,1");
+	}
+
 	public static void main(String [] args){
 
 		over2num();
 		try0num();
 		try2num();
 		nonNum();
+		oneNumSum();
+		twoNumSum();
 	}
 }
