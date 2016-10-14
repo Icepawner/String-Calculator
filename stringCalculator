@@ -3,18 +3,19 @@ public class stringCalculator{
 
 	public static final void add(final String n){
 		
+		int val = 0;		
 		String[] arr = numbers.split(",");
 
 		if (arr.length > 2){
 			System.out.print("Invalid");
 			return 0;
 		}
-		else{
-			for (String number : numbersArray){
-			Integer.parseInt(n);
+		for (String number : arr){
+			if (!number.trim().empty()){
+				val += Integer.parseInt(number);
 			}
 		}
 		
-		return 0;
+		return val;
 	}
 }
