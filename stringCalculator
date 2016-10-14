@@ -1,0 +1,18 @@
+
+public class stringCalculator{
+
+	public static final void add(final String n){
+		
+		String[] arr = numbers.split(",");
+
+		if (arr.length > 2){
+			System.out.print("Invalid");
+			return 0;
+		}
+		else{
+			for (String number : numbersArray){
+			Integer.parseInt(n);
+			}
+		}
+	}
+}
