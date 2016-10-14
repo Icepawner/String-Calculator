@@ -2,7 +2,7 @@
 
 public class stringCalculator{
 
-	public static final void add(final String n){
+	public static int add(final String n){
 		
 		int val = 0;		
 		String[] arr = numbers.split(",|n");
@@ -21,5 +21,9 @@ public class stringCalculator{
 		}
 		
 		return val;
+	}
+
+	public static int add(final String numbers, final String delimiter){
+
 	}
 }
