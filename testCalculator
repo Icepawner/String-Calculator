@@ -1,0 +1,31 @@
+
+import String-Calculator/stringCalculator;
+
+
+public class testCalculator{
+
+	public final void over2num(){
+		stringCalculator.add("1,2,3");
+	}
+
+	public final void try0num(){
+		stringCalculator.add();
+		Assert.assertTrue(true);
+	}
+
+	public final void try2num(){
+		stringCalculator.add("1,2");
+	}
+
+	public final void nonNum(){
+		stringCalculator.add("1,e");
+	}
+
+	public static void main(String [] args){
+
+		over2num();
+		try0num();
+		try2num();
+		nonNum();
+	}
+}
