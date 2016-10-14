@@ -32,8 +32,13 @@ public class testCalculator{
 		Assert.assertEquals(1+2+3+4+5+6+7+8+9, stringCalculator.add("1,2,3,4,5,6,7,8,9");
 	}
 
+	public final void newLine(){
+		Assert.assertEquals(1+2+3, stringCalculator.add("1,2n15");
+	}
+
 	public static void main(String [] args){
 
 		anyNumber();
+		newLine();
 	}
 }
