@@ -28,13 +28,12 @@ public class testCalculator{
 		Assert.assertEquals(1 + 1, stringCalculator("1,1");
 	}
 
+	public final void anyNumber(){
+		Assert.assertEquals(1+2+3+4+5+6+7+8+9, stringCalculator.add("1,2,3,4,5,6,7,8,9");
+	}
+
 	public static void main(String [] args){
 
-		over2num();
-		try0num();
-		try2num();
-		nonNum();
-		oneNumSum();
-		twoNumSum();
+		anyNumber();
 	}
 }

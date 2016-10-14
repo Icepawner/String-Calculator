@@ -1,4 +1,5 @@
 
+
 public class stringCalculator{
 
 	public static final void add(final String n){
@@ -6,10 +7,13 @@ public class stringCalculator{
 		int val = 0;		
 		String[] arr = numbers.split(",");
 
+		/*
 		if (arr.length > 2){
 			System.out.print("Invalid");
 			return 0;
 		}
+		*/
+
 		for (String number : arr){
 			if (!number.trim().empty()){
 				val += Integer.parseInt(number);
